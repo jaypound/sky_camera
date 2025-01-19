@@ -1,7 +1,7 @@
 # Satellite Detection and Video Processing
 
 ## Overview
-This Python program processes sky camera videos to detect and track moving objects such as satellites. Using frame differencing and clustering, the program identifies small, slow-moving objects, excludes static noise, and dynamically highlights detections with bounding boxes. The output is a filtered video with improved continuity for detected objects by including additional frames after detections.
+This Python program processes sky camera videos to detect and track moving objects such as planes and satellites. Using frame differencing and clustering, the program identifies small, slow-moving objects, excludes static noise, and dynamically highlights detections with bounding boxes. The output is a filtered video with improved continuity for detected objects by including additional frames after detections.
 
 ## Features
 - **Frame Differencing**: Identifies motion by calculating differences between consecutive video frames.
@@ -28,4 +28,4 @@ This Python program processes sky camera videos to detect and track moving objec
 2. **Output Folder**: Processed videos with detections will be saved in the `videos_processed` directory.
 3. **Run the Script**:
    ```bash
-   python satellite_detection.py
+   python sky_camera.py
