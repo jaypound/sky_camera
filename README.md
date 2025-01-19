@@ -29,3 +29,6 @@ This Python program processes sky camera videos to detect and track moving objec
 3. **Run the Script**:
    ```bash
    python sky_camera.py
+   
+
+
