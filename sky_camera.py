@@ -186,6 +186,8 @@ def process_capture(cap: cv2.VideoCapture, output_path: str, is_live: bool = Fal
                      (left_region["x_end"], frame_height), (0, 0, 255), 2)
         cv2.rectangle(display_frame, (right_region["x_start"], region_y_start),
                      (right_region["x_end"], frame_height), (0, 0, 255), 2)
+        cv2.namedWindow("Output Frame with Boxes and Exclusion Areas", cv2.WINDOW_NORMAL)
+        cv2.resizeWindow("Output Frame with Boxes and Exclusion Areas", 1280, 720)
         cv2.imshow("Output Frame with Boxes and Exclusion Areas", display_frame)
 
         prev_gray = curr_gray
